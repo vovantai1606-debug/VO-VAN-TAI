@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang web giới thiệu bản thân - Portfolio cá nhân">
+    <title>Portfolio | Giới Thiệu Bản Thân</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>VVT<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                <li><a href="#projects" class="nav-link">Dự án</a></li>
+                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Sẵn sàng làm việc
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Xin chào, tôi là</span>
+                <span class="title-name" id="typedName"></span>
+                <span class="typing-cursor">|</span>
+            </h1>
+            <p class="hero-subtitle">Web Developer & UI/UX Designer</p>
+            <p class="hero-description">
+                Tôi đam mê tạo ra những trải nghiệm web tuyệt vời, kết hợp giữa thiết kế sáng tạo và công nghệ hiện đại.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <span>Xem dự án</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Liên hệ</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Năm kinh nghiệm</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Dự án hoàn thành</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Khách hàng</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="avatar-container">
+                <div class="avatar-ring"></div>
+                <div class="avatar-ring ring-2"></div>
+                <div class="avatar-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <div class="floating-card card-1">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+            </div>
+            <div class="floating-card card-2">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+            </div>
+            <div class="floating-card card-3">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Giới thiệu</span>
+                <h2 class="section-title">Về bản thân tôi</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <div class="about-img-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="about-img-border"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">3+</span>
+                        <span class="exp-text">Năm<br>Kinh nghiệm</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3 class="about-heading">Một nhà phát triển web đầy đam mê</h3>
+                    <p class="about-text">
+                        Tôi là một lập trình viên web với niềm đam mê tạo ra những sản phẩm số đẹp mắt và hiệu quả. 
+                        Với kinh nghiệm trong cả front-end và back-end, tôi luôn nỗ lực mang đến giải pháp tốt nhất cho mỗi dự án.
+                    </p>
+                    <p class="about-text">
+                        Khi không code, tôi thích khám phá công nghệ mới, đọc sách về thiết kế UX, 
+                        và chia sẻ kiến thức với cộng đồng developer.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <span class="info-label">Họ tên</span>
+                                <span class="info-value">Nguyễn Văn A</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-value">vovantai1606@kyungmin.ac.kr</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Địa chỉ</span>
+                                <span class="info-value">TP. Hồ Chí Minh</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">Học vấn</span>
+                                <span class="info-value">Cử nhân CNTT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Tải CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kỹ năng</span>
+                <h2 class="section-title">Công nghệ tôi sử dụng</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="95">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 95%"></div></div>
+                    <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-card" data-skill="90">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card" data-skill="85">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card" data-skill="80">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <h3>React</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card" data-skill="75">
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card" data-skill="70">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card" data-skill="80">
+                    <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                    <h3>Figma</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card" data-skill="75">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Git</h3>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div>
+                    <span class="skill-percent">75%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Dự án</span>
+                <h2 class="section-title">Các dự án nổi bật</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-img-placeholder gradient-1" style="background: linear-gradient(135deg, #87CEEB, #228B22); position: relative; overflow: hidden;">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://game-wheat-mu.vercel.app" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Jump & Run Platformer</h3>
+                        <p>Game platformer phong cách Mario với nhân vật nhảy, thu thập coin, tránh quái vật và vượt qua chướng ngại vật.</p>
+                        <div class="project-tags">
+                            <span>HTML5 Canvas</span><span>JavaScript</span><span>Game Dev</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-img-placeholder gradient-2">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Chat Application</h3>
+                        <p>Ứng dụng chat realtime với tính năng nhóm chat, gửi file và video call.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span><span>Socket.io</span><span>Express</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-img-placeholder gradient-3">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Bảng điều khiển phân tích dữ liệu với biểu đồ tương tác và báo cáo tự động.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>D3.js</span><span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Liên hệ</span>
+                <h2 class="section-title">Hãy kết nối với tôi</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Hãy cùng tạo nên điều tuyệt vời!</h3>
+                    <p>Tôi luôn sẵn sàng lắng nghe ý tưởng của bạn. Hãy liên hệ để chúng ta bắt đầu hợp tác.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">vovantai1606@kyungmin.ac.kr</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="contact-label">Điện thoại</span>
+                                <span class="contact-value">+84 123 456 789</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-label">Địa chỉ</span>
+                                <span class="contact-value">TP. Hồ Chí Minh, Việt Nam</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Họ tên</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder=" " required>
+                        <label for="subject">Tiêu đề</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Nội dung</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Gửi tin nhắn</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>VVT<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">Thiết kế & phát triển với <i class="fas fa-heart"></i> bởi VVT</p>
+                <p class="footer-copyright">&copy; 2026 - Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
