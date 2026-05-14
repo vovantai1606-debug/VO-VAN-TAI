@@ -292,11 +292,12 @@ img { max-width: 100%; display: block; }
 .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center; }
 .about-image { position: relative; }
 .about-img-wrapper { position: relative; border-radius: var(--radius); overflow: hidden; }
-.about-img-placeholder {
+.about-img-photo {
     width: 100%; aspect-ratio: 4/5;
-    background: var(--gradient-2);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 5rem; color: rgba(255,255,255,0.3);
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    border-radius: var(--radius);
 }
 .about-img-border {
     position: absolute; inset: -1px;
